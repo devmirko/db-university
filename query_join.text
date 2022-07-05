@@ -1,3 +1,5 @@
 SELECT students.name , students.surname, degrees.name FROM degrees JOIN students ON students.degree_id WHERE degrees.name = "Corso di Laurea in Economia";
 
 SELECT departments.id, departments.name, degrees.name, degrees.address FROM departments JOIN degrees ON degrees.department_id WHERE departments.name = "Dipartimento di Neuroscienze" AND degrees.name LIKE "Corso di Laurea Magistrale%"; 
+
+SELECT* FROM course_teacher JOIN teachers ON course_teacher.teacher_id = teachers.id WHERE course_teacher.teacher_id = 44; 
